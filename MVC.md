@@ -13,7 +13,7 @@ Controlador:
 Phyton: Es facil de utilizar, todo el equipo cuenta con conocimientos del mismo y nos permite desarrollar la web app de la forma en que deseamos hacerlo.
 
 Modelo:
-MySql: Es facil de utilizar, todo el equipo cuenta con conocimientos del mismo y nos permite controlar la base de datos de la web app.
+MySql: Como gestor de bases de datos es amigable y se puede acceder a los datos con SQL standar, todo el equipo cuenta con conocimientos del mismo y nos permite controlar el manejo de nuestra base de datos de forma optima.
 
 El framework elegido para controlar todo esto seria Django para aprovechar las ventajas del mismo a la hora de utilizar Phyton, ya que tiene resuelto varios de las cuestiones básicas en cuanto a programación y manejo de la base de datos.
 
