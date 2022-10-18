@@ -5,7 +5,7 @@ Fundamentos de la eleccion de las tecnologias.
 
 Vista:
 HTML y CSS: Como la aplicacion es fundamentalmente web, estas tecnologias son las principales para el desarrollo del Front End de la aplicacion.
-Js: para aportar dinamismo a la pagina y soluciones a lo que HTML y CSS no puedan resolver.
+Js: para aportar dinamismo a la pagina y soluciones a lo que HTML y CSS no puedan resolver,nos permite generar  caracteristicas  dinamicas.
 Bootstrap: Para facilitar la estructuracion de la pagina a nivel HTML y CSS, apoyandonos en las soluciones responsive, de estilo y maquetacion que el framework propone.
 Font Awesome: Nos permite usar un gran numero de iconos que son facilmente escalables.
 
