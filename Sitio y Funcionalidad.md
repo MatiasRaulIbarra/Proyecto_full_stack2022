@@ -1,0 +1,2 @@
+El sitio es responsive, usa Bootstrap, Font Awesome, JQuery.
+Tiene funcionales la home, la pagina de login/registro (a traves del icono de login en la barra superior), la pagina de contacto y una pagina de prueba (Mascotas).
