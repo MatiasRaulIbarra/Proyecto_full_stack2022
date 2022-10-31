@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Mascotas - Concato</title>
+
+    <!-- Cargamos los archivos css necesarios para correr el sitio -->
+    <link href="/css/style.css" rel="stylesheet">
+    
+    <!-- Font Awsome para utilizar iconos -->
+    <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
+
+    <!-- Bootstrap para manejar la estructura html -->
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Cargamos los archivos js necesarios -->
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Boobstrap para manejar la estructura html  -->
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+
+</head>
+<body>
+    <!-- Header con dos bloques, primero uno con logo, busqueda y acceso, el segundo con menu-->
+    <header id="top-header" class="pt-4 pb-4">
+        <div class="container">
+            <div class="row th-top">
+                <div class="col-3 col-lg-4 col-md-3">
+                    <div id="logo"><img alt="logo" src="images/logo.png" /></div>
+                </div>
+                <div class="col-7 col-lg-4 col-md-5 text-center">
+                    <form class="d-flex buscador">
+                        <input type="search" name="buscar" placeholder="¿Qué estas buscándo?" autocomplete="off">
+                        <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"><span>Buscar</span></i></button>
+                    </form>
+                </div>
+                <div class="col-2 col-lg-4 col-md-4 text-end">
+                    <div class="user d-inline-block"><a href="user.html" title="user"><i class="fa-solid fa-user"></i></a></div>
+                    <div class="d-inline-block d-lg-none d-md-none menu-toggler">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row th-bottom">
+                <nav class="navbar navbar-expand-md">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto d-flex justify-content-lg-center justify-content-md-center pl-3 pr-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="mascotas.html" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Mascotas
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Informacion de Mascotas</a>
+                                <a class="dropdown-item" href="#">Alimentacion</a>
+                                <a class="dropdown-item" href="#">Vacunas</a>
+                                <a class="dropdown-item" href="#">Cuidados generales</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Veterinaria
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <a class="dropdown-item" href="#">Mas cercanas</a>
+                                <a class="dropdown-item" href="#">A domicilio</a>
+                                <a class="dropdown-item" href="#">De guardia</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cuidados
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                    <a class="dropdown-item" href="#">Paseadores</a>
+                                    <a class="dropdown-item" href="#">Peluqueria Canina</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Comunidad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Las secciones de contenidos de una pagina generica -->
+
+    <section class="page-title bg-dark text-light p-100">
+        <div class="container"><div class="row">
+            <div class="col">
+                <h1 class="title">Page title</h1>
+            </div>
+        </div></div>
+    </section>
+
+    <section class="home-contenido bloque-info p-100">
+        <div class="container"><div class="row">
+            <div class="col-lg-6 col-12 order-lg-1 order-2 align-self-center">
+                <h2 class="title">Lorem Impsum text</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+            </div>
+            <div class="col-lg-6 col-12 order-lg-2 order-1">
+                <div class="page-image"><img alt="cobayo" src="images/cobayo1.jpg" /></div>
+            </div>
+        </div></div>
+    </section>
+
+    <section class="home-contenido bloque-info">
+        <div class="container"><div class="row">
+            <div class="col-12">
+                <div class="banner-image"><img alt="cobayo" src="images/banner-COBAYA.jpg" /></div>
+            </div>
+        </div></div>
+    </section>
+
+    <section class="home-contenido bloque-info p-100 bg-light">
+        <div class="container"><div class="row">
+            <div class="col-lg-6 col-12 order-lg-2 order-2 align-self-center">
+                <h4 class="uppertitle">Lorem Impsum</h4>
+                <h2 class="title">Lorem Impsum text</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+            </div>
+            <div class="col-lg-6 col-12 order-lg-1 order-1">
+                <div class="page-image"><img alt="cobayo" src="images/cobayo2.jpg" /></div>
+            </div>
+        </div></div>
+    </section>
+
+    
+
+    <section class="home-contenido bloque-info p-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h4 class="uppertitle">Lorem Impsum</h4>
+                    <h2 class="title">Lorem Impsum text</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="gallery-image"><img alt="cobayo" src="images/cobayo3.jpg" /></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="gallery-image"><img alt="cobayo" src="images/cobayo4.jpg" /></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="gallery-image"><img alt="cobayo" src="images/cobayo5.jpg" /></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="gallery-image"><img alt="cobayo" src="images/cobayo6.jpg" /></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="gallery-image"><img alt="cobayo" src="images/cobayo7.jpg" /></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="gallery-image"><img alt="cobayo" src="images/cobayo8.jpg" /></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="gallery-image"><img alt="cobayo" src="images/cobayo9.jpg" /></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="gallery-image"><img alt="cobayo" src="images/cobayo10.jpg" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- Footer con dos bloques, uno con descripcion, menu y logo, el segundo con links de privacidad y copyright-->
+
+    <footer class="bg-dark p-100 text-light pb-0">
+        <div class="container p-100 pt-0">
+            <div class="row footer-top">
+                <div class="col-12 col-lg-4">
+                    <div class="footer-bloque bloque-1 p-lg-2 pl-0 pt-2 pb-2">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dolorum perspiciatis provident voluptas nihil similique
+                    </div>
+                   
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="footer-bloque bloque-2 p-lg-2 pt-2 pb-2">
+                        <ul class="menu-footer">
+                            <li class="menu-item">
+                                <a href="mascotas.html">Mascotas</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Veterinarias</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Cuidados</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Comunidad</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>                
+                <div class="col-12 col-lg-4 pt-2 pb-2 d-lg-flex d-none justify-content-lg-end">
+                    <div class="footer-blocque bloque-3 p-lg-2 pr-0 logo-footer text-lg-end">
+                        <img src="/images/logo.png" />
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="bg-black"><div class="container">
+            <div class="row footer-bottom pt-3 pb-3">
+                <div class="fb-item col-lg-6">
+                    <a href="#" class="d-lg-inline d-block">Politica de Cookies</a>
+                    <a href="#" class="d-lg-inline d-block">Politicas de Privacidad</a>
+                </div>
+                <div class="fb-item col-lg-6 text-lg-end">Copyrith 2022</div>
+            </div>
+        </div></div>
+    </footer>
+
+
+    <!-- Archivo personalizado -->
+    <script src="/js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+#logo {
+    max-width: 60px;
+    width:100%;
+}
+
+#logo img {
+    width:100%;
+}
+
+nav ul {
+    padding:0;
+    margin:0;
+}
+
+nav ul li {
+    list-style: none;
+    list-style-image: none;
+}
+
+.search-button i span {
+    display:none;
+}
+
+#navbarSupportedContent .navbar-nav {
+    width:100%;
+}
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+   
+.dropdown-toggle::after {
+     transition: transform 0.15s linear; 
+}
+   
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+.logo-footer img {
+    max-width: 200px;
+}
+
+.buscador input {
+    width: 100%;
+}
+
+#slider img {
+    width: 100%;
+}
+
+.bi-image {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.p-100 {
+    padding:100px 0;
+}
+
+.home-contenido.slider {
+    padding-top:0;
+}
+
+.banner-center img {
+    width: 100%;
+}
+
+.form-user {
+    padding: 50px;
+}
