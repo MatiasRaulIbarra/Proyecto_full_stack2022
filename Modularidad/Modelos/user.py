@@ -2,14 +2,49 @@ class DuenoMascotas:
     def __init__(self):
         pass
 
-    def CrearCuenta(self):
-        pass
-    
-    def ModificarCuenta(self):
-        pass
+#------------------ CREAR CUENTA (CREATE / INSERT) -----------------------
 
-    def EliminarCuenta(self):
-        pass
+    def CrearCuenta(self,nombre,nombre_usuario,clave,pais,provincia,localidad,calle,numero,tel,mail):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sentenciaSQL = 'INSERT INTO dueno_mascotas VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'
+                data = (nombre,nombre_usuario,clave,pais,provincia,localidad,calle,numero,tel,mail)
+                cursor.execute(sentenciaSQL)
+                self.conexion.commit()
+                self.conexion.close()
+                print('CUENTA CREADA')
+            except:
+                print('ERROR DE CONEXIÓN')
+
+
+#------------------ MODIFICAR CUENTA (UPDATE) ----------------------
+    def ModificarCuenta(self,ID):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sentenciaSQL = 'UPDATE dueno_mascotas SET nombre=%s,nombre_usuario=%s,clave=%s,pais=%s,provincia=%s,localidad=%s,calle=%s,numero=%s,tel=%s,mail=%s WHERE id_dueno = ID;'
+                cursor.execute(sentenciaSQL)
+                self.conexion.commit()
+                self.conexion.close()
+                print('SE HAN ACTUALIZADO LOS CAMBIOS')
+                
+            except:
+                print('ERROR DE CONEXIÓN')
+
+#------------------ ELIMINAR CUENTA (DELETE) -----------------------
+    def EliminarCuenta(self,ID):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sentenciaSQL = 'DELETE FROM dueno_mascotas WHERE id_dueno = ID'
+                cursor.execute(sentenciaSQL)
+                self.conexion.commit()
+                self.conexion.close()
+                print('CUENTA ELIMINADA')
+                
+            except:
+                print('ERROR DE CONEXIÓN')
 
     def RegistrarMascota(self):
         pass
@@ -17,8 +52,20 @@ class DuenoMascotas:
     def ModificarMascota(self):
         pass
 
-    def VerMascotas(self):
-        pass
+#------------------ VER MASCOTAS (READ) ---------------------------
+    def VerMascotas(self,ID):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sentenciaSQL = 'SELECT nombre,nacimiento,especie_animal AS "especie",raza,peso,altura,patologia FROM registro_mascota WHERE id_dueno = ID;'
+                cursor.execute(sentenciaSQL)
+                registrosEncontrados = cursor.fetchall()
+                self.conexion.close()
+                return registrosEncontrados
+
+            except:
+                print('ERROR DE CONEXIÓN')
+
 
     def EliminarMascota(self):
         pass
