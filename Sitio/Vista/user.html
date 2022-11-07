@@ -121,7 +121,9 @@
             </div>
             <div class="col-lg-6 col-12">
                 <h2 class="title">Registrarse</h2>
-                <form id="formulario-registro" class="d-flex flex-column form-user bg-light rounded" method="post">
+     
+                <form id="formulario-registro" class="d-flex flex-column form-user bg-light rounded" method="post" onsubmit="validarEmail()">
+                
                     <input type="text" placeholder="Usernane" id="fruser" name="fruser" class="mb-2 form-control" min="4" max="15" autofocus required>
                     <input type="email" placeholder="E-mail" id="frmail" name="frmail" class="mb-2 form-control" multiple required>
                     <input type="text" placeholder="Nombre" id="frnombre" name="frnombre" class="mb-2 form-control" min="2" max="20" required>
