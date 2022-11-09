@@ -7,14 +7,13 @@
     <title>App Mascotas - User</title>
 
     <!-- Cargamos los archivos css necesarios para correr el sitio -->
-    <link href="/css/style.css" rel="stylesheet">
-    
+   
     <!-- Font Awsome para utilizar iconos -->
-    <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
 
     <!-- Bootstrap para manejar la estructura html -->
-    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Cargamos los archivos js necesarios -->
 
@@ -22,7 +21,9 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <!-- Boobstrap para manejar la estructura html  -->
-    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
     
 
 </head>
@@ -36,8 +37,8 @@
                 </div>
                 <div class="col-7 col-lg-4 col-md-5 text-center">
                     <form class="d-flex buscador">
-                        <input type="search" name="buscar" placeholder="¿Qué estas buscándo?" autocomplete="off">
-                        <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"><span>Buscar</span></i></button>
+                        <input type="search" name="buscar" placeholder="¿Qué estas buscándo?" autocomplete="off" class="form-control">
+                        <button type="submit" class="search-button btn"><i class="fa-solid fa-magnifying-glass"><span>Buscar</span></i></button>
                     </form>
                 </div>
                 <div class="col-2 col-lg-4 col-md-4 text-end">
@@ -68,13 +69,13 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="veterinarias.html" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Veterinaria
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                                <a class="dropdown-item" href="#">Mas cercanas</a>
+                                <a class="dropdown-item" href="veterinarias.html">Mas cercanas</a>
                                 <a class="dropdown-item" href="#">A domicilio</a>
-                                <a class="dropdown-item" href="#">De guardia</a>
+                                <a class="dropdown-item" href="veterinarias-guardia.html">De guardia</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -82,8 +83,8 @@
                                     Cuidados
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                                    <a class="dropdown-item" href="#">Paseadores</a>
-                                    <a class="dropdown-item" href="#">Peluqueria Canina</a>
+                                    <a class="dropdown-item" href="cuidados-paseadores.html">Paseadores</a>
+                                    <a class="dropdown-item" href="cuidados-peluqueria.html">Peluqueria Canina</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -113,24 +114,33 @@
         <div class="container"><div class="row">
             <div class="col-lg-6 col-12">
                 <h2 class="title">Entrar</h2>
-                <form id="formulario-login" class="d-flex flex-column form-user bg-light rounded" method="post">
-                    <input type="text" placeholder="User"  id="fluser" name="fluser" class="mb-2 form-control" required>
-                    <input type="password" placeholder="Password"  id="flpass" name="flpass" class="mb-2 form-control" required>
+                <form id="formulario-login" class="d-flex flex-column form-user bg-light rounded">
+                    <input type="text" placeholder="User"  id="fluser" name="fluser" class="mb-2 form-control">
+                    <input type="password" placeholder="Password"  id="flpass" name="flpass" class="mb-2 form-control">
                     <button class="btn btn-primary">Log-In</button>
                 </form>
             </div>
             <div class="col-lg-6 col-12">
                 <h2 class="title">Registrarse</h2>
-     
-                <form id="formulario-registro" class="d-flex flex-column form-user bg-light rounded" method="post" onsubmit="validarEmail()">
-                
-                    <input type="text" placeholder="Usernane" id="fruser" name="fruser" class="mb-2 form-control" min="4" max="15" autofocus required>
-                    <input type="email" placeholder="E-mail" id="frmail" name="frmail" class="mb-2 form-control" multiple required>
-                    <input type="text" placeholder="Nombre" id="frnombre" name="frnombre" class="mb-2 form-control" min="2" max="20" required>
-                    <input type="password" placeholder="Password" id="frpass" name="frpass" class="mb-2 form-control" min="8" max="20" required>
-                    <input type="password" placeholder="Repetir Password" id="frpass2" name="frpass2" class="mb-2 form-control" min="8" max="20" required>
-                    <button class="btn btn-primary">Register</button>
+                <form id="formulario-registro" class="d-flex flex-column form-user bg-light rounded" method="post">
+                    <input type="text" placeholder="Usernane"  id="fruser" name="fruser" class="mb-2 form-control" required>
+                    <input type="email" placeholder="E-mail"  id="frmail" name="frmail" class="mb-2 form-control" required>
+                    <input type="text" placeholder="Nombre"  id="frnombre" name="frnombre" class="mb-2 form-control" required>
+                    <input type="text" placeholder="Apellido"  id="frapellido" name="frapellido" class="mb-2 form-control" required>
+                    <input type="password" placeholder="Password"  id="frpass" name="frpass" class="mb-2 form-control">
+                    <input type="password" placeholder="Repetir Password"  id="frpass2" name="frpass2" class="mb-2 form-control">
+                    <div id="message">
+                        <b>El Password debe contener:</b><br>
+                        <span id="letter" class="invalid">Una letra en <b>minúscula</b></span><br>
+                        <span id="capital" class="invalid">Una letra en <b>mayúscula</b></span><br>
+                        <span id="number" class="invalid">Un <b>número</b></span><br>
+                        <span id="length" class="invalid">Mínimo <b>8 caracteres</b></span><br>
+                        <br>
+                        <span id="equal" class="invalid">Los passwords deben <b>coincidir</b></span>
+                    </div>
+                    <button class="btn btn-primary" type="submit" disabled="true" id="registerSubmit">Register</button>
                 </form>
+                
             </div>
         </div></div>
     </section>
@@ -155,7 +165,7 @@
                                 <a href="mascotas.html">Mascotas</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Veterinarias</a>
+                                <a href="veterinarias.html">Veterinarias</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Cuidados</a>
@@ -171,7 +181,7 @@
                 </div>                
                 <div class="col-12 col-lg-4 pt-2 pb-2 d-lg-flex d-none justify-content-lg-end">
                     <div class="footer-blocque bloque-3 p-lg-2 pr-0 logo-footer text-lg-end">
-                        <img src="/images/logo.png" />
+                        <img src="images/logo.png" />
                     </div>
                 </div>
             </div>            
@@ -189,7 +199,8 @@
 
 
     <!-- Archivo personalizado -->
-    <script src="/js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/validation-register.js"></script>
 
 </body>
 </html>
