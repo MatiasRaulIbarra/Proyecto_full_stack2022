@@ -53,5 +53,6 @@ function validarEmail(valor) {
   }
 };
 
+
 // function validarNombre(nombre){
 //   if (typeof nombre === 'number')
