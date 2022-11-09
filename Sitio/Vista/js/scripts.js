@@ -37,6 +37,7 @@ $(window).on("load resize", function() {
 const nombre = document.getElementById('frnombre')
 const email = document.getElementById('frmail')
 const usuario = document.getElementById('fruser')
+const form = document.getElementById('formulario-registro')
 
 form.addEventListener('submit', (e) =>{
   e.preventDefault() ;                                                //Cancela el formulario antes de enviar asi no se envia con errores
@@ -52,6 +53,30 @@ function validarEmail(valor) {
    alert("La dirección de email es incorrecta.");
   }
 };
+
+function validateForm() {
+  let ctnombre = document.forms["ctform"]["ctnombre"].value;
+  let ctapellido = document.forms["ctform"]["ctapellido"].value;
+  let ctmail = document.forms["ctform"]["ctmail"].value;
+  let ctmensaje = document.forms["ctform"]["ctmensaje"].value;
+  let mensaje = "";
+  if (ctnombre == "") {
+    mensaje += "Debe completar el campo de nombre.";
+  }
+  if (ctapellido == "") {
+    mensaje += "\nDebe completar el campo de Apellido.";
+  }
+  if (ctmail == "") {
+    mensaje += "\nDebe completar el campo de mail para que podamos comunicarnos con usted.";
+  }
+  if (ctmensaje == "") {
+    mensaje += "\nDebe completar el campo de mensaje para tener conocimiento de sus dudas u opiniones.";
+  }
+  if (mensaje !== "") {
+    alert(mensaje);
+    return false;
+  }
+}
 
 
 // function validarNombre(nombre){
