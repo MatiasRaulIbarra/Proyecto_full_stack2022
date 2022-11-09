@@ -122,16 +122,24 @@
             </div>
             <div class="col-lg-6 col-12">
                 <h2 class="title">Registrarse</h2>
-     
                 <form id="formulario-registro" class="d-flex flex-column form-user bg-light rounded" method="post" onsubmit="validarEmail()">
-                
                     <input type="text" placeholder="Usernane" id="fruser" name="fruser" class="mb-2 form-control" min="4" max="15" autofocus required>
                     <input type="email" placeholder="E-mail" id="frmail" name="frmail" class="mb-2 form-control" multiple required>
                     <input type="text" placeholder="Nombre" id="frnombre" name="frnombre" class="mb-2 form-control" min="2" max="20" required>
+                    <input type="text" placeholder="Apellido"  id="frapellido" name="frapellido" class="mb-2 form-control" required>
                     <input type="password" placeholder="Password" id="frpass" name="frpass" class="mb-2 form-control" min="8" max="20" required>
                     <input type="password" placeholder="Repetir Password" id="frpass2" name="frpass2" class="mb-2 form-control" min="8" max="20" required>
-                    <button class="btn btn-primary">Register</button>
-                </form>          
+                    <div id="message">
+                        <b>El Password debe contener:</b><br>
+                        <span id="letter" class="invalid">Una letra en <b>minúscula</b></span><br>
+                        <span id="capital" class="invalid">Una letra en <b>mayúscula</b></span><br>
+                        <span id="number" class="invalid">Un <b>número</b></span><br>
+                        <span id="length" class="invalid">Mínimo <b>8 caracteres</b></span><br>
+                        <br>
+                        <span id="equal" class="invalid">Los passwords deben <b>coincidir</b></span>
+                    </div>
+                    <button class="btn btn-primary" type="submit" disabled="true" id="registerSubmit">Register</button>
+                </form>      
             </div>
         </div></div>
     </section>
