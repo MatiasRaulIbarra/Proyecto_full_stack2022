@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Mascotas - Carlos Gutierrez</title>
+
+    <!-- Cargamos los archivos css necesarios para correr el sitio -->
+       
+    <!-- Font Awsome para utilizar iconos -->
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+
+    <!-- Bootstrap para manejar la estructura html -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Cargamos los archivos js necesarios -->
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Boobstrap para manejar la estructura html  -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+    
+
+</head>
+<body>
+    <!-- Header con dos bloques, primero uno con logo, busqueda y acceso, el segundo con menu-->
+    <header id="top-header" class="pt-4 pb-4">
+        <div class="container">
+            <div class="row th-top">
+                <div class="col-3 col-lg-4 col-md-3">
+                    <div id="logo"><img alt="logo" src="images/logo.png" /></div>
+                </div>
+                <div class="col-7 col-lg-4 col-md-5 text-center">
+                    <form class="d-flex buscador">
+                        <input type="search" name="buscar" placeholder="¿Qué estas buscándo?" autocomplete="off" class="form-control">
+                        <button type="submit" class="search-button btn"><i class="fa-solid fa-magnifying-glass"><span>Buscar</span></i></button>
+                    </form>
+                </div>
+                <div class="col-2 col-lg-4 col-md-4 text-end">
+                    <div class="user d-inline-block"><a href="user.html" title="user"><i class="fa-solid fa-user"></i></a></div>
+                    <div class="d-inline-block d-lg-none d-md-none menu-toggler">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row th-bottom">
+                <nav class="navbar navbar-expand-md">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto d-flex justify-content-lg-center justify-content-md-center pl-3 pr-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="mascotas.html" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Mascotas
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Informacion de Mascotas</a>
+                                <a class="dropdown-item" href="#">Alimentacion</a>
+                                <a class="dropdown-item" href="#">Vacunas</a>
+                                <a class="dropdown-item" href="#">Cuidados generales</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="veterinarias.html" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Veterinaria
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <a class="dropdown-item" href="veterinarias.html">Mas cercanas</a>
+                                <a class="dropdown-item" href="#">A domicilio</a>
+                                <a class="dropdown-item" href="veterinarias-guardia.html">De guardia</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cuidados
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                    <a class="dropdown-item" href="cuidados-paseadores.html">Paseadores</a>
+                                    <a class="dropdown-item" href="cuidados-peluqueria.html">Peluqueria Canina</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Comunidad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Las secciones de contenidos de una pagina de servicio paseador -->
+
+    <section class="paseador-contenido p-100 bg-light">
+        <div class="container"><div class="row">
+            <div class="col-lg-6 col-12 order-lg-1 order-2 align-self-center">
+                <h1 class="title">Carlos Gutierrez</h1>
+                <div class="servicio">
+                    <h5>Paseador</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
+            </div>
+            <div class="col-lg-6 col-12 order-lg-2 order-1 mb-4 mb-lg-0">
+                <div class="page-image"><img alt="cobayo" src="images/paseador.jpg" /></div>
+            </div>
+        </div></div>
+    </section>
+
+    <section class="home-contenido bloque-info p-100">
+        <div class="container"><div class="row">
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                <div class="card peto">
+                    <h3>Horario</h3>
+                    <p>Estos son los horarios que manejamos para el servicio!</p>
+                    <ul class="horario">
+                        <li class="horario-item">
+                            <span class="horario-dia">Lunes</span>
+                            <span class="horario-dots"></span>
+                            <span class="horario-tiempo">10AM - 8PM</span>
+                        </li>
+                        <li class="horario-item">
+                            <span class="horario-dia">Martes</span>
+                            <span class="horario-dots"></span>
+                            <span class="horario-tiempo">10AM - 8PM</span>
+                        </li>
+                        <li class="horario-item">
+                            <span class="horario-dia">Miercoles</span>
+                            <span class="horario-dots"></span>
+                            <span class="horario-tiempo">10AM - 8PM</span>
+                        </li>
+                        <li class="horario-item">
+                            <span class="horario-dia">Jueves</span>
+                            <span class="horario-dots"></span>
+                            <span class="horario-tiempo">10AM - 8PM</span>
+                        </li>
+                        <li class="horario-item">
+                            <span class="horario-dia">Viernes</span>
+                            <span class="horario-dots"></span>
+                            <span class="horario-tiempo">10AM - 8PM</span>
+                        </li>
+                        <li class="horario-item">
+                            <span class="horario-dia">Sábado</span>
+                            <span class="horario-dots"></span>
+                            <span class="horario-tiempo">10AM - 2PM</span>
+                        </li>
+                        <li class="horario-item">
+                            <span class="horario-dia">Domingo</span>
+                            <span class="horario-dots"></span>
+                            <span class="horario-tiempo">Cerrado</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                <div class="card peto">
+                    <h3>Contacto</h3>
+                    <ul class="contacto">
+                        <li class="contacto-item">
+                            <i class="fa-solid fa-envelope"></i> <a href="mailto:email@email.com">email@email.com</a>
+                        </li>
+                        <li class="contacto-item">
+                            <i class="fa-brands fa-whatsapp"></i> <a href="#">555555555555</a>
+                        </li>
+                        <li class="contacto-item">
+                            <i class="fa-solid fa-phone"></i> <a href="#">555555555555</a>
+                        </li>
+                    </ul>
+                    <h3>Redes</h3>
+                    <ul class="redes">
+                        <li class="redes-item">
+                            <i class="fa-brands fa-instagram"></i> <a href="#">@instagram</a>
+                        </li>
+                        <li class="redes-item">
+                            <i class="fa-brands fa-facebook"></i> <a href="#">@facebook</a>
+                        </li>
+                        <li class="redes-item">
+                            <i class="fa-brands fa-twitter"></i> <a href="#">@twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card peto">
+                    <h3>Costo</h3>
+                    <p>Los costos de los servicios prestados son.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vitae rem quod ea nihil</p>
+                </div>
+            </div>
+        </div></div>
+    </section>
+
+    
+
+    <section class="home-contenido bloque-info p-100 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h4 class="uppertitle">Valoraciones</h4>
+                    <h2 class="title">Opiniones y algo mas</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="valora-no-loged">
+                        <a class="btn" href="user.html">Necesitas registrarte/loguearte para valorar</a>
+                    </div>
+                    <form id="valora-form">
+                        <div class="vf-username">Roberto Carlo</div>
+                        <div class="vf-stars" id="vf-star">
+                            <i class="fa-regular fa-star" id="val-star1"></i>
+                            <i class="fa-regular fa-star" id="val-star2"></i>
+                            <i class="fa-regular fa-star" id="val-star3"></i>
+                            <i class="fa-regular fa-star" id="val-star4"></i>
+                            <i class="fa-regular fa-star" id="val-star5"></i>
+                        </div>
+                        <input type="number" max="5" min="0" class="mb-2 form-control d-none" value="0" name="vf-val" id="vf-val" placeholder="0">
+                        <textarea name="vf-mensaje" placeholder="Valoración" id="" cols="30" rows="10" class="mb-2 form-control bg-light mb-2"></textarea>
+                        <button class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row valoraciones">
+                <div class="col-12">
+                    <div class="valoracion">
+                        <header class="valora-header">
+                            <div class="valora-user">Juan Antonio Solis</div>
+                            <div class="valora-stars">
+                                </i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </header>
+                        <div class="valora-contento">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ut explicabo reiciendis sit velit fugiat, fuga, ipsam repellendus nulla quasi natus maxime. Est aut reiciendis nulla velit accusantium optio animi.</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="valoracion">
+                        <header class="valora-header">
+                            <div class="valora-user">Estela Gutierrez</div>
+                            <div class="valora-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </header>
+                        <div class="valora-contento">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ut explicabo reiciendis sit velit fugiat, fuga, ipsam repellendus nulla quasi natus maxime. Est aut reiciendis nulla velit accusantium optio animi.</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="valoracion">
+                        <header class="valora-header">
+                            <div class="valora-user">Carla Martinez</div>
+                            <div class="valora-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </header>
+                        <div class="valora-contento">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ut explicabo reiciendis sit velit fugiat, fuga, ipsam repellendus nulla quasi natus maxime. Est aut reiciendis nulla velit accusantium optio animi.</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="valoracion">
+                        <header class="valora-header">
+                            <div class="valora-user">Marco Aurelio</div>
+                            <div class="valora-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </header>
+                        <div class="valora-contento">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ut explicabo reiciendis sit velit fugiat, fuga, ipsam repellendus nulla quasi natus maxime. Est aut reiciendis nulla velit accusantium optio animi.</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="valoracion">
+                        <header class="valora-header">
+                            <div class="valora-user">Juana Viale</div>
+                            <div class="valora-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </header>
+                        <div class="valora-contento">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ut explicabo reiciendis sit velit fugiat, fuga, ipsam repellendus nulla quasi natus maxime. Est aut reiciendis nulla velit accusantium optio animi.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- Footer con dos bloques, uno con descripcion, menu y logo, el segundo con links de privacidad y copyright-->
+
+    <footer class="bg-dark p-100 text-light pb-0">
+        <div class="container p-100 pt-0">
+            <div class="row footer-top">
+                <div class="col-12 col-lg-4">
+                    <div class="footer-bloque bloque-1 p-lg-2 pl-0 pt-2 pb-2">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dolorum perspiciatis provident voluptas nihil similique
+                    </div>
+                   
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="footer-bloque bloque-2 p-lg-2 pt-2 pb-2">
+                        <ul class="menu-footer">
+                            <li class="menu-item">
+                                <a href="mascotas.html">Mascotas</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="veterinarias.html">Veterinarias</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Cuidados</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Comunidad</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>                
+                <div class="col-12 col-lg-4 pt-2 pb-2 d-lg-flex d-none justify-content-lg-end">
+                    <div class="footer-blocque bloque-3 p-lg-2 pr-0 logo-footer text-lg-end">
+                        <img src="images/logo.png" />
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="bg-black"><div class="container">
+            <div class="row footer-bottom pt-3 pb-3">
+                <div class="fb-item col-lg-6">
+                    <a href="#" class="d-lg-inline d-block">Politica de Cookies</a>
+                    <a href="#" class="d-lg-inline d-block">Politicas de Privacidad</a>
+                </div>
+                <div class="fb-item col-lg-6 text-lg-end">Copyrith 2022</div>
+            </div>
+        </div></div>
+    </footer>
+
+
+    <!-- Archivo personalizado -->
+    <script src="js/scripts.js"></script>
+    <script src="js/validacion.js"></script>
+
+</body>
+</html>
