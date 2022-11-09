@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Mascotas - Concato</title>
+    <title>App Mascotas - Contacto</title>
 
     <!-- Cargamos los archivos css necesarios para correr el sitio -->
-    <link href="css/style.css" rel="stylesheet">
-    
+        
     <!-- Font Awsome para utilizar iconos -->
     <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
@@ -23,6 +22,8 @@
 
     <!-- Boobstrap para manejar la estructura html  -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
     
 
 </head>
@@ -36,8 +37,8 @@
                 </div>
                 <div class="col-7 col-lg-4 col-md-5 text-center">
                     <form class="d-flex buscador">
-                        <input type="search" name="buscar" placeholder="¿Qué estas buscándo?" autocomplete="off">
-                        <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"><span>Buscar</span></i></button>
+                        <input type="search" name="buscar" placeholder="¿Qué estas buscándo?" autocomplete="off" class="form-control">
+                        <button type="submit" class="search-button btn"><i class="fa-solid fa-magnifying-glass"><span>Buscar</span></i></button>
                     </form>
                 </div>
                 <div class="col-2 col-lg-4 col-md-4 text-end">
@@ -68,13 +69,13 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="veterinarias.html" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Veterinaria
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                                <a class="dropdown-item" href="#">Mas cercanas</a>
+                                <a class="dropdown-item" href="veterinarias.html">Mas cercanas</a>
                                 <a class="dropdown-item" href="#">A domicilio</a>
-                                <a class="dropdown-item" href="#">De guardia</a>
+                                <a class="dropdown-item" href="veterinarias-guardia.html">De guardia</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -82,8 +83,8 @@
                                     Cuidados
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                                    <a class="dropdown-item" href="#">Paseadores</a>
-                                    <a class="dropdown-item" href="#">Peluqueria Canina</a>
+                                    <a class="dropdown-item" href="cuidados-paseadores.html">Paseadores</a>
+                                    <a class="dropdown-item" href="cuidados-peluqueria.html">Peluqueria Canina</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -116,12 +117,12 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio pariatur reiciendis aliquam at vitae, nobis consequuntur unde sed iste accusamus eos atque, dolores nam doloribus temporibus autem? Aut, consectetur.</p>
             </div>
             <div class="col-lg-6 col-12">
-                <form id="formulario-contacto" class="d-flex flex-column">
-                    <input type="text" placeholder="Nombre"  id="ctnombre" name="ctnombre" class="mb-2 form-control">
-                    <input type="text" placeholder="Apellido"  id="ctapellido" name="ctapellido" class="mb-2 form-control">
+                <form id="formulario-contacto" name="ctform" class="d-flex flex-column" method="post" onsubmit="return validateForm()">
+                    <input type="text" placeholder="Nombre"  id="ctnombre" name="ctnombre" class="mb-2 form-control" maxlength="20" minlength="4">
+                    <input type="text" placeholder="Apellido"  id="ctapellido" name="ctapellido" class="mb-2 form-control" maxlength="20" minlength="4">
                     <input type="email" placeholder="E-mail"  id="ctmail" name="ctmail" class="mb-2 form-control">
                     <textarea name="ctmensaje" placeholder="Mensaje" id="" cols="30" rows="10" class="mb-2 form-control"></textarea>
-                    <button class="btn btn-primary">Enviar</button>
+                    <input type="submit" value="Enviar" class="btn btn-primary">
                 </form>
             </div>
         </div></div>
@@ -147,7 +148,7 @@
                                 <a href="mascotas.html">Mascotas</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Veterinarias</a>
+                                <a href="veterinarias.html">Veterinarias</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Cuidados</a>
@@ -163,7 +164,7 @@
                 </div>                
                 <div class="col-12 col-lg-4 pt-2 pb-2 d-lg-flex d-none justify-content-lg-end">
                     <div class="footer-blocque bloque-3 p-lg-2 pr-0 logo-footer text-lg-end">
-                        <img src="/images/logo.png" />
+                        <img src="images/logo.png" />
                     </div>
                 </div>
             </div>            
@@ -181,7 +182,7 @@
 
 
     <!-- Archivo personalizado -->
-    <script src="/js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>
