@@ -10,7 +10,7 @@ class DuenoMascotas:
                 cursor = self.conexion.cursor()
                 sentenciaSQL = 'INSERT INTO dueno_mascotas VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'
                 data = (nombre,nombre_usuario,clave,pais,provincia,localidad,calle,numero,tel,mail)
-                cursor.execute(sentenciaSQL)
+                cursor.execute(sentenciaSQL,data)
                 self.conexion.commit()
                 self.conexion.close()
                 print('CUENTA CREADA')
